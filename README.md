@@ -52,6 +52,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 3. Run `firebase use --add` select your project and give it the alias 'default'
 4. Run `firebase deploy` to deploy your project.
 
+**NOTICE:** `firebase deploy` will also try to upload the angular build to your *firebase hosting*, so make sure you run `ng build` first.
+
 ## More Resources
 
 1. Excellent source for Angular Firebase Videos - https://angularfirebase.com/
