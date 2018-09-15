@@ -9,7 +9,21 @@ Checkout `/Firebase-Meetup.pdf`
 ## Prerequisites
 1. Install Angular CLI
 2. Create a new [Firebase project](https://console.firebase.google.com/)
-3. Copy your project's details and paste them in /src/environments/environment.ts as [explained here](https://firebase.google.com/docs/web/setup).
+3. Open `/src/environments/environment.ts` and add your Firebase configuration. You can find your project configuration in [the Firebase Console](https://console.firebase.google.com). From the project overview page, click **Add app** and select **Add Firebase to your web app**.
+
+```ts
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: '<your-key>',
+    authDomain: '<your-project-authdomain>',
+    databaseURL: '<your-database-URL>',
+    projectId: '<your-project-id>',
+    storageBucket: '<your-storage-bucket>',
+    messagingSenderId: '<your-messaging-sender-id>'
+  }
+};
+```
 4. The _SignIn_ component implements Google Login. Enable it through the authentication section in your firebase console.
 
 **Notice** This project uses [Angular Firebase](https://github.com/angular/angularfire2), which is an angular wrapper of the [firebase js] library. Checkout [their tutorial](https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md) for details and code samples.
@@ -17,6 +31,7 @@ Checkout `/Firebase-Meetup.pdf`
 ## Install Dependencies
 
 Run `npm install` inside the project library.
+**AND ALSO** inside `./functions` folder if you plan to deploy them.
 
 ## Development server
 
