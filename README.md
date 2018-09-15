@@ -26,7 +26,7 @@ export const environment = {
 ```
 4. The _SignIn_ component implements Google Login. Enable it through the authentication section in your firebase console.
 
-**Notice** This project uses [Angular Firebase](https://github.com/angular/angularfire2), which is an angular wrapper of the [firebase js] library. Checkout [their tutorial](https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md) for details and code samples.
+**Notice** This project uses [Angular Firebase](https://github.com/angular/angularfire2), which is an angular wrapper of the original firebase js library. Checkout [their tutorial](https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md) for details and code samples.
 
 ## Install Dependencies
 
@@ -49,7 +49,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 1. Install [Firebase CLI](https://firebase.google.com/docs/cli/)
 2. Run `firebase login` to connect to your account
-3. Run `firebase use --add` select your project and give it the alias 'default'
+3. Run `firebase use --add` inside your project folder, select your new project and give it the alias 'default'
 4. Run `firebase deploy` to deploy your project.
 
 **NOTICE:** `firebase deploy` will also try to upload the angular build to your *firebase hosting*, so make sure you run `ng build` first.
