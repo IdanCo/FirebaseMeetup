@@ -8,11 +8,11 @@ Checkout `/Firebase-Meetup.pdf`
 
 ## Prerequisites
 1. Install Angular CLI
-2. Install Firebase CLI
-3. Create a new Firebase project
-4. Copy your project's details and paste them in /src/environments/environment.ts as [explained here](https://firebase.google.com/docs/web/setup).
-5. This project uses [Angular Firebase](https://github.com/angular/angularfire2), which is an angular wrapper of the firebase js library.
-6. The _SignIn_ component implements Google Login. Enable it through the authentication section in firebase console.
+2. Create a new [Firebase project](https://console.firebase.google.com/)
+3. Copy your project's details and paste them in /src/environments/environment.ts as [explained here](https://firebase.google.com/docs/web/setup).
+4. The _SignIn_ component implements Google Login. Enable it through the authentication section in your firebase console.
+
+**Notice** This project uses [Angular Firebase](https://github.com/angular/angularfire2), which is an angular wrapper of the [firebase js] library. Checkout [their tutorial](https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md) for details and code samples.
 
 ## Install Dependencies
 
@@ -28,11 +28,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory, which can later be deployed to firebase.
 
-## Deploy
+## Deploy To Firebase
 
-Run `firebase deploy` to deploy your project.
+1. Install [Firebase CLI](https://firebase.google.com/docs/cli/)
+2. Run `firebase login` to connect to your account
+3. Run `firebase use --add` select your project and give it the alias 'default'
+4. Run `firebase deploy` to deploy your project.
 
 ## More Resources
 
